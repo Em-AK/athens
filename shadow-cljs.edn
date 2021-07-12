@@ -38,6 +38,11 @@
                  :main athens.main.core/main
                  :compiler-options {:output-feature-set :es-next}}
 
+          :mobile {:target :react-native
+                   :init-fn athens.mobile/init
+                   :output-dir "react-native/app"
+                   :js-options {:js-package-dirs ["react-native/node_modules"]}}
+
           :devcards         {:asset-path "js/devcards"
                              :modules {:main {:init-fn athens.devcards/main}}
                              :compiler-options {:devcards true}

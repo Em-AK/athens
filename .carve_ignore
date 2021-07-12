@@ -9,3 +9,4 @@ athens.patterns/date
 athens.util/common-ancestor
 athens.events/pages
 athens.views.blocks.core/block-component
+athens.mobile/init

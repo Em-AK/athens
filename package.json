@@ -14,7 +14,11 @@
     "compile": "shadow-cljs compile main renderer app",
     "prod": "shadow-cljs release main renderer app",
     "clean": "rm -rf resources/public/**/*.js && rm -rf target && rm -rf .shadow-cljs",
-    "dist": "electron-builder -p always"
+    "dist": "electron-builder -p always",
+    "mobile:dev": "shadow-cljs watch mobile",
+    "mobile:metro": "cd react-native && yarn start",
+    "mobile:android": "cd react-native && yarn android",
+    "mobile:ios": "cd react-native && yarn ios"
   },
   "main": "resources/main.js",
   "build": {
