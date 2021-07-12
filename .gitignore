@@ -31,3 +31,7 @@
 
 # electron build
 dist
+
+# react-native build
+
+react-native/app/
